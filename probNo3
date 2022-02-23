@@ -1,0 +1,25 @@
+const my_map = function(x) {
+     return x % 3 == 0;
+ }
+ const my_filter = function(x) {
+     return x % 3 == 0;
+ }
+ var vall2 = [2, 3, 6, 1, 7];
+ let arr2 = vall2.filter(my_filter);
+ // false, true, true, false,false
+ //[3,6]
+ let map_out = vall2.map(my_map)
+     // false, true, true, false,false
+     // false, true, true, false,false
+
+
+Alternative Method..
+ console.log(my_filter(2));
+ for (i = 0; i < vall2.length; i++) {
+     if (vall2[i] % 2 == 0) {
+         res = vall2[i] + i;
+         console.log(res);
+     } else {
+         console.log("no even digit is found");
+     }
+ }
